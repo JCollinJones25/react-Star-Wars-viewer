@@ -14,7 +14,7 @@ root.render(
     <Sidebar />
     <Routes>
       <Route path='/' element={<Main />} >
-        <Route path='/movie/' element={<Movie />} />
+        <Route path='/movie/:id' element={<Movie />} />
       </Route>
     </Routes>
   </Router>

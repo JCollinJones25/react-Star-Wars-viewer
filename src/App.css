@@ -1,11 +1,21 @@
-.App {
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.Main {
   text-align: center;
 }
 
 .Sidebar {
   float: left;
-  max-width: 25%;
-  max-height: 100%;
+  max-width: 15%;
+  max-height: auto;
   border-right: solid;
   display: flex;
   flex-direction: row;
@@ -17,8 +27,17 @@
   max-width: 100%;
   height: auto;
   display: block;
+  display: flex;
   margin: 15px;
 }
+
 .Movies img {
   max-width: 100%;
+  align-self: center;
+}
+
+.home-logo {
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }

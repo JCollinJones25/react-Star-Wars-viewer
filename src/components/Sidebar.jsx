@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import movieData from "../data.json";
 
-const Sidebar = () => {
+const Sidebar1 = () => {
   const movies = movieData.movies;
 
   console.log(movies);
@@ -20,4 +20,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Sidebar1;
