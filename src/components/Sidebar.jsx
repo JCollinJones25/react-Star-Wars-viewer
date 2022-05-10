@@ -1,9 +1,23 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import movieData from "../data.json";
 
 const Sidebar = () => {
-    return (
-        <h1> Sidebar </h1>
-    )
-}
+  const movies = movieData.movies;
 
-export default Sidebar
+  console.log(movies);
+
+  return (
+    <div className="Sidebar">
+      {movies.map((movie, idx) => (
+        <div className="Movies">
+          <Link to={`/movie/${idx}`} key={idx}>
+            <img src={`../images/${movie.poster}`} alt={movie.slug} />
+            <h3>{movie.title}</h3>
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Sidebar;
