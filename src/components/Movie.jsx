@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 
-const Movie = () => {
+
+const Movie = (props) => {
+
+
+
     return (
         <>
         <Link to={`/`}>Back to Home Page</Link>
-        <h1> Movie </h1>
+        <h1> {props.title} </h1>
         </>
     )
 }

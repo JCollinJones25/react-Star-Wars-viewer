@@ -1,10 +1,6 @@
-import "./App.css";
-import { Outlet } from "react-router";
-
-function Main() {
+const Home = () => {
   return (
-    <div className="Main">
-      <Outlet />
+    <>
       <div className="home-title">
         <h1>Star Wars Movie Wiki</h1>
       </div>
@@ -13,10 +9,11 @@ function Main() {
           src={
             "https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/maxresdefault-13.jpg?auto=format&q=60&fit=max&w=930"
           }
+          alt={"star-wars-logo"}
         />
       </div>
-    </div>
+    </>
   );
-}
+};
 
-export default Main;
+export default Home 

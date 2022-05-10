@@ -12,11 +12,22 @@ a {
   text-align: center;
 }
 
-.Sidebar {
+.SidebarLeft {
   float: left;
   max-width: 15%;
   max-height: auto;
   border-right: solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.SidebarRight {
+  float: right;
+  max-width: 15%;
+  max-height: auto;
+  border-left: solid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -40,4 +51,9 @@ a {
   display: flex;
   margin: auto;
   justify-content: center;
+}
+.home-logo img {
+  max-width: 75%;
+  margin: auto;
+  margin-top: 25%;
 }
