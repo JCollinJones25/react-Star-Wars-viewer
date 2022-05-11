@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+a img {
+  justify-content: center;
+}
+
 .Main {
   text-align: center;
 }
@@ -20,7 +24,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  justify-content: center;
 }
 
 .SidebarRight {
@@ -31,7 +35,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  justify-content: center;
 }
 
 .Movies {
@@ -44,6 +48,7 @@ a {
 
 .Movies img {
   max-width: 100%;
+  max-height: auto;
   align-self: center;
 }
 
@@ -52,8 +57,23 @@ a {
   margin: auto;
   justify-content: center;
 }
+
 .home-logo img {
-  max-width: 75%;
+  max-width: 100%;
   margin: auto;
   margin-top: 25%;
+}
+
+.hero-img {
+  max-width: 25%;
+  margin: auto;
+  
+}
+
+.movie-info {
+  max-width: 80%;
+  /* margin: auto; */
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
 }

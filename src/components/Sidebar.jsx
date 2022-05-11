@@ -2,18 +2,14 @@ import { Link } from "react-router-dom";
 import movieData from "../data.json";
 
 const Sidebar = () => {
+
   const movies = movieData.movies;
 
   const middleIndex = Math.ceil(movies.length / 2)
+  const prequels = movies.splice(0, middleIndex)
+  const originals = movies.splice(-middleIndex)
 
   
-  const prequels = movies.splice(0, middleIndex)
-  console.log(prequels)
-  const originals = movies.splice(-middleIndex)
-  console.log(originals)
-
- 
-
   return (
     <>
     <div className="SidebarLeft">
