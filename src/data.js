@@ -1,4 +1,4 @@
-
+const data = 
 {
     "movies": [
       {
@@ -111,3 +111,4 @@
     ]
   }
   
+  export default data

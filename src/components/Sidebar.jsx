@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import movieData from "../data.json";
+import data from "../data.json";
 
 const Sidebar = () => {
 
-  const movies = movieData.movies;
-
+  const movies = data.movies;
+console.log(movies)
   const middleIndex = Math.ceil(movies.length / 2)
   const prequels = movies.splice(0, middleIndex)
   const originals = movies.splice(-middleIndex)

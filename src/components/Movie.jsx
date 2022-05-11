@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
-import movieData from "../data2.json";
+import movieData from "../data.js";
 
 const Movie = () => {
 
+    
     console.log(movieData)
 
     const [movie, setMovie] = useState({})
